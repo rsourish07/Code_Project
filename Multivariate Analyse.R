@@ -3,7 +3,7 @@ library(glmulti)
 library(flextable)
 library(tidyverse)
 library(readxl)
-daten <- read_excel("C:/Users/rsour/Downloads/MA_Datenanalyse2.xlsx", na = "weissnicht") #ladet die daten, "weissnicht" wird zu "Missing value" 
+daten <- read_excel("Path zum File") #ladet die daten, "weissnicht" wird zu "Missing value" 
 
 # Modellauswahl
 h_model <- glmulti(AR~Stilldauer+Passives_Rauchen+Genetische_PräAR+Anzahl_ÄG+
@@ -36,3 +36,4 @@ fancy_table <- tbl_regression(
   bold_p() # Signifikanz "fett" setzen
 
 fancy_table
+
