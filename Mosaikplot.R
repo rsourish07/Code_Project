@@ -1,6 +1,6 @@
 library(readxl)
 library(vcd)
-daten <- read_excel("C:/Users/rsour/Downloads/MA_Datenanalyse2.xlsx", na = "weissnicht")
+daten <- read_excel("Path zum File")
 daten$Asthma <- factor(daten$Asthma, levels = c(0, 1), labels = c("Nein", "Ja"))  
 
 daten$AR <- factor(daten$AR, levels = c(0, 1), labels = c("Nein", "Ja"))
@@ -68,6 +68,7 @@ grid.text("Ja", x = 1, y = 0.69, just = "left")
 grid.rect(x = 0.98, y = 0.60, width = 0.03, height = 0.06,
           gp = gpar(fill = "#90BBD8", col = "black"))
 grid.text("Nein", x = 1, y = 0.60, just = "left")
+
 
 
 
